@@ -7,7 +7,7 @@ const teamMembers = [
     expertise: 'AI',
     email: 'david@esecsec.dk',
     phone: '+45 40 91 42 53',
-    photoUrl: '/team_images/david.jpg' // Add this line
+    photoUrl: '/team_images/david.jpg'
   },
   {
     name: 'Jakob Østergaard',
@@ -15,7 +15,7 @@ const teamMembers = [
     expertise: 'Sikkerhedsanalyse, Compliance, IT-sikkerhed',
     email: 'jakob@esecsec.dk',
     phone: 'N/A',
-    photoUrl: '/team_images/jakob.jpg' // Add this line
+    photoUrl: '/team_images/jakob.jpg'
   },
   {
     name: 'Jan Kaastrup',
@@ -23,7 +23,7 @@ const teamMembers = [
     expertise: 'IT-brandmand',
     email: 'jan@esecsec.dk',
     phone: 'N/A',
-    photoUrl: '/team_images/stock.jpg' // Add this line
+    photoUrl: '/team_images/stock.jpg'
   },
   {
     name: 'Morten Felding',
@@ -31,7 +31,7 @@ const teamMembers = [
     expertise: 'Salg',
     email: 'morten@esecsec.dk',
     phone: 'N/A',
-    photoUrl: '/team_images/morten.jpg' // Add this line
+    photoUrl: '/team_images/morten.jpg'
   }
 ];
 
