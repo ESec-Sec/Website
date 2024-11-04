@@ -73,8 +73,8 @@ const Products = () => {
     <div className="space-y-16">
       {/* Products Introduction */}
       <section className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Vores Sikkerhedsløsninger</h1>
-        <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+        <h1 className="text-4xl font-semibold mb-4">Vores Sikkerhedsløsninger</h1>
+        <p className="text-xl text-gray-950 max-w-3xl mx-auto">
           Vi tilbyder skræddersyede sikkerhedsløsninger til virksomheder af alle størrelser. 
           Vælg den pakke der passer bedst til dine behov.
         </p>
@@ -92,12 +92,12 @@ const Products = () => {
           >
             {pkg.highlighted && (
               <div className="bg-primary text-white text-center py-2">
-                <span className="text-sm font-medium">Begge pakker</span>
+                <span className="text-sm font-italic">Begge pakker</span>
               </div>
             )}
             
             <div className="p-6">
-              <h3 className="text-2xl font-bold mb-2">{pkg.name}</h3>
+              <h3 className="text-2xl font-semibold mb-2">{pkg.name}</h3>
               <div className="mb-4">
                 <span className="text-4xl font-bold">{pkg.price}</span>
                 <span className="text-gray-600"> DKK</span>
@@ -137,9 +137,9 @@ const Products = () => {
       </section>
 
       {/* Feature Comparison */}
-      <section className="bg-gray-50 py-16 -mx-4 sm:-mx-6 lg:-mx-8">
+      <section className="bg-gray-50 py-16 rounded-xl -mx-4 sm:-mx-6 lg:-mx-8">
         <div className="container">
-          <h2 className="text-3xl font-bold text-center mb-12">Sammenlign Pakker</h2>
+          <h2 className="text-3xl font-semibold text-center mb-12">Sammenlign Pakker</h2>
           
           <div className="overflow-x-auto">
             <table className="w-full bg-white rounded-xl shadow-sm">
@@ -184,6 +184,7 @@ const Products = () => {
           </div>
         </div>
       </section>
+      <div style={{ height: '1px' }}></div>
     </div>
   );
 };

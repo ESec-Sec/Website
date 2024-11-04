@@ -60,8 +60,8 @@ const About = () => {
       {/* Team Introduction */}
       <section>
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold mb-4">Mød Vores Team</h1>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <h1 className="text-4xl font-semibold mb-4">Mød Vores Team</h1>
+          <p className="text-xl text-gray-950 max-w-3xl mx-auto">
             Vi er et dedikeret team af sikkerhedseksperter med omfattende erfaring 
             inden for IT-sikkerhedsløsninger og AI.
           </p>
@@ -79,14 +79,14 @@ const About = () => {
                 <img src={member.photoUrl} className="w-150 h-150" />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-semibold mb-1">{member.name}</h3>
-                <p className="text-primary mb-3">{member.title}</p>
-                <p className="text-gray-600 text-sm mb-4">{member.expertise}</p>
+                <h3 className="text-xl font-italic mb-1">{member.name}</h3>
+                <p className="text-primary/70 mb-3">{member.title}</p>
+                <p className="text-gray-400 text-sm mb-4">{member.expertise}</p>
                 
                 <div className="space-y-2">
                   <a 
                     href={`mailto:${member.email}`}
-                    className="flex items-center gap-2 text-gray-600 hover:text-primary"
+                    className="flex items-center gap-2 text-gray-500 hover:text-primary"
                   >
                     <HiMail className="w-5 h-5" />
                     <span className="text-sm">{member.email}</span>
@@ -106,9 +106,9 @@ const About = () => {
       </section>
 
       {/* Team Values */}
-      <section className="bg-gray-50 py-16 -mx-4 sm:-mx-6 lg:-mx-8">
+      <section className="bg-gray-50 py-16 rounded-xl -mx-4 sm:-mx-6 lg:-mx-8">
         <div className="container">
-          <h2 className="text-3xl font-bold text-center mb-12">Vores Værdier</h2>
+          <h2 className="text-3xl font-semibold text-center mb-12">Vores Værdier</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {values.map((value, index) => (
               <div 
@@ -122,6 +122,7 @@ const About = () => {
           </div>
         </div>
       </section>
+      <div style={{ height: '1px' }}></div>
     </div>
   );
 };

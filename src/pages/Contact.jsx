@@ -89,8 +89,8 @@ const Contact = () => {
     <div className="space-y-16">
       {/* Hero Section */}
       <section className="text-center mb-12">
-        <h1 className="text-4xl font-bold mb-4">Kontakt Os</h1>
-        <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+        <h1 className="text-4xl font-semibold mb-4">Kontakt os</h1>
+        <p className="text-xl text-gray-950 max-w-3xl mx-auto">
           Vi er her for at hjælpe. Kontakt os med dine spørgsmål om AI og IT-sikkerhed.
         </p>
       </section>
@@ -262,6 +262,7 @@ const Contact = () => {
             </div>
           </div>
         </section>
+        <div style={{ height: '1px' }}></div>
       </div>
     </div>
   );

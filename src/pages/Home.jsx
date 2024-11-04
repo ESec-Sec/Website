@@ -23,10 +23,10 @@ const Home = () => {
   return (
     <div className="space-y-16">
       {/* Hero Section */}
-      <section className="relative -mt-0 py-10 bg-gradient-to-r from-primary/90 to-primary rounded-3xl overflow-hidden">
+      <section className="relative -mt-0 py-10 bg-gradient-to-r from-primary to-primary/1000 rounded-3xl overflow-hidden">
         <div className="container relative z-10">
           <div className="max-w-2xl text-white">
-            <h1 className="text-4xl sm:text-5xl font-bold mb-6">
+            <h1 className="text-4xl sm:text-5xl font-semibold mb-6">
               Din støtte i AI-verden og IT-sikkerhed
             </h1>
             <p className="text-xl mb-10 text-white/90">
@@ -47,8 +47,8 @@ const Home = () => {
       {/* Mission & Vision */}
       <section className="container">
         <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-6">Vores Mission & Vision</h2>
-          <p className="text-lg text-gray-600 mb-8">
+          <h2 className="text-3xl font-italic mb-6">Vores Mission & Vision</h2>
+          <p className="text-lg text-gray-950 mb-8">
             Vi stræber efter at skabe en sikrere digital verden for virksomheder gennem innovative sikkerhedsløsninger og ekspertise inden for cybersikkerhed.
           </p>
           <div className="grid sm:grid-cols-2 gap-8">
@@ -70,7 +70,7 @@ const Home = () => {
 
       {/* Services */}
       <section className="container">
-        <h2 className="text-3xl font-bold text-center mb-12">Vores Kerneydelser</h2>
+        <h2 className="text-3xl font-italic text-center mb-12">Vores Kerneydelser</h2>
         <div className="grid md:grid-cols-3 gap-8">
           {services.map((service, index) => {
             const Icon = service.icon;
@@ -87,6 +87,7 @@ const Home = () => {
           })}
         </div>
       </section>
+      <div style={{ height: '1px' }}></div>
     </div>
   );
 };
