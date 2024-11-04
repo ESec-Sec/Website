@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { HiMail, HiPhone, HiUser, HiLocationMarker } from 'react-icons/hi';
+import emailjs from '@emailjs/browser';
 
 const teamMembers = [
   {
@@ -36,14 +37,45 @@ const Contact = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
+    phone: '',
     subject: '',
     message: ''
   });
+  const [status, setStatus] = useState('');
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Handle form submission here
-    console.log('Form submitted:', formData);
+    setStatus('sending');
+
+    try {
+      const templateParams = {
+        to_email: 'example@example.com',
+        from_name: formData.name,
+        from_email: formData.email,
+        from_phone: formData.phone,
+        subject: formData.subject,
+        message: formData.message
+      };
+
+      await emailjs.send(
+        'service_ev007a8',
+        'template_xhe7v7c',
+        templateParams,
+        'GmSwb1Qj3gusiho5d'
+      );
+
+      setStatus('success');
+      setFormData({
+        name: '',
+        email: '',
+        phone: '',
+        subject: '',
+        message: ''
+      });
+    } catch (error) {
+      console.error('Error sending email:', error);
+      setStatus('error');
+    }
   };
 
   const handleChange = (e) => {
@@ -97,6 +129,20 @@ const Contact = () => {
               />
             </div>
             <div>
+              <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1">
+                Telefonnummer
+              </label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                value={formData.phone}
+                onChange={handleChange}
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-primary focus:border-primary"
+                required
+              />
+            </div>
+            <div>
               <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-1">
                 Emne
               </label>
@@ -126,10 +172,21 @@ const Contact = () => {
             </div>
             <button
               type="submit"
-              className="w-full bg-primary text-white py-3 px-6 rounded-lg hover:bg-primary-dark transition-colors"
+              disabled={status === 'sending'}
+              className={`w-full py-3 px-6 rounded-lg transition-colors ${
+                status === 'sending'
+                  ? 'bg-gray-400 cursor-not-allowed'
+                  : 'bg-primary text-white hover:bg-primary-dark'
+              }`}
             >
-              Send Besked
+              {status === 'sending' ? 'Sender...' : 'Send Besked'}
             </button>
+            {status === 'success' && (
+              <p className="text-green-600 text-center">Beskeden blev sendt!</p>
+            )}
+            {status === 'error' && (
+              <p className="text-red-600 text-center">Der opstod en fejl. Prøv igen senere.</p>
+            )}
           </form>
         </section>
 
