@@ -3,7 +3,9 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  background: linear-gradient(to bottom, #fb4343, #0d21ff); /* Example gradient background */
 }
+
 
 .logo {
   height: 6em;
