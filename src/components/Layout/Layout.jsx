@@ -13,7 +13,7 @@ const Layout = ({ children }) => {
     <div className="min-h-screen bg-gray-50">
       <Header toggleSidebar={toggleSidebar} />
       <Sidebar isOpen={isSidebarOpen} setIsOpen={setIsSidebarOpen} />
-      <main className="pt-20 lg:pl-64">
+      <main className="pt-20 lg:pl-0">
         <div className="container py-0">
           {children}
         </div>

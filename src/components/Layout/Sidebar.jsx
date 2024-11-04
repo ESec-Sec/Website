@@ -15,42 +15,18 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
       {/* Mobile backdrop */}
       {isOpen && (
         <div
-          className="fixed inset-0 bg-gray-900/50 lg:hidden z-40"
+          className="fixed inset-0 bg-gray-900/50 z-40"
           onClick={() => setIsOpen(false)}
         />
       )}
 
-      {/* Sidebar */}
+      {/* Sidebar - hidden on lg screens */}
       <aside
         className={`
-          fixed top-0 left-0 z-50 h-full w-64 bg-white shadow-lg transform transition-transform duration-300 ease-in-out
+          fixed top-16 left-0 z-50 h-full w-64 bg-white shadow-lg transform transition-transform duration-300 ease-in-out lg:hidden
           ${isOpen ? 'translate-x-0 translate-y-0' : '-translate-x-full'}
-          lg:translate-x-0 lg:static lg:z-0
         `}
       >
-        {/* Mobile close button */}
-        <button
-          onClick={() => setIsOpen(false)}
-          className="lg:hidden absolute top-4 right-4 p-2 rounded-md hover:bg-gray-100"
-          aria-label="Close sidebar"
-        >
-          <HiX className="w-5 h-5 text-gray-600" />
-        </button>
-
-        {/* Logo section */}
-        <div className="h-16 flex items-center px-6">
-          <Link to="/" className="flex items-center gap-2">
-            <img 
-              src="/logo.svg" 
-              alt="Esecsec Logo" 
-              className="h-8 w-auto"
-            />
-            <span className="text-xl font-semibold text-gray-900">
-              Esecsec
-            </span>
-          </Link>
-        </div>
-
         {/* Navigation */}
         <nav className="px-4 py-2">
           {navigation.map((item) => {

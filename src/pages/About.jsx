@@ -5,7 +5,7 @@ const teamMembers = [
     name: 'David Hald',
     title: 'AI Specialist',
     expertise: 'AI',
-    email: 'david@esecsec.dk',
+    email: 'david@davidhald.com',
     phone: '+45 40 91 42 53',
     photoUrl: '/team_images/david.jpg'
   },

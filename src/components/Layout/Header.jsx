@@ -26,7 +26,8 @@ const Header = ({ toggleSidebar }) => {
           </Link>
         </div>
 
-        {/* Desktop Navigation 
+        
+        {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-6">
           <Link
             to="/"
@@ -52,7 +53,7 @@ const Header = ({ toggleSidebar }) => {
           >
             Kontakt os
           </Link>
-        </nav>*/}
+        </nav>
       </div>
     </header>
   );
