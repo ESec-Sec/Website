@@ -37,8 +37,8 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
           <HiX className="w-5 h-5 text-gray-600" />
         </button>
 
-        {/* Logo section
-        <div className="h-40 flex items-center px-6">
+        {/* Logo section */}
+        <div className="h-16 flex items-center px-6">
           <Link to="/" className="flex items-center gap-2">
             <img 
               src="/logo.svg" 
@@ -49,10 +49,10 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
               Esecsec
             </span>
           </Link>
-        </div> */}
+        </div>
 
         {/* Navigation */}
-        <nav className="px-4 py-4">
+        <nav className="px-4 py-2">
           {navigation.map((item) => {
             const Icon = item.icon;
             return (
