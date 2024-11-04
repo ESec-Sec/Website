@@ -23,16 +23,16 @@ const Home = () => {
   return (
     <div className="space-y-16">
       {/* Hero Section */}
-      <section className="relative -mt-6 py-20 bg-gradient-to-r from-primary/90 to-primary rounded-3xl overflow-hidden">
+      <section className="relative -mt-0 py-10 bg-gradient-to-r from-primary/90 to-primary rounded-3xl overflow-hidden">
         <div className="container relative z-10">
           <div className="max-w-2xl text-white">
             <h1 className="text-4xl sm:text-5xl font-bold mb-6">
               Din støtte i AI-verden og IT-sikkerhed
             </h1>
-            <p className="text-xl mb-8 text-white/90">
+            <p className="text-xl mb-10 text-white/90">
               Selskabsledelsens livline i it-sikkerhed og kunstig intelligens.
             </p>
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-wrap gap-5">
               <Link to="/products" className="btn bg-white text-primary hover:bg-white/90">
                 Se vores løsninger
               </Link>

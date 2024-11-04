@@ -6,28 +6,32 @@ const teamMembers = [
     title: 'AI Specialist',
     expertise: 'AI',
     email: 'david@esecsec.dk',
-    phone: '+45 40 91 42 53'
+    phone: '+45 40 91 42 53',
+    photoUrl: '/team_images/david.jpg' // Add this line
   },
   {
     name: 'Jakob Østergaard',
     title: 'IT-security Specialist',
     expertise: 'Sikkerhedsanalyse, Compliance, IT-sikkerhed',
     email: 'jakob@esecsec.dk',
-    phone: '?'
+    phone: '?',
+    photoUrl: '/team_images/jakob.jpg' // Add this line
   },
   {
     name: 'Jan Kaastrup',
     title: 'Branddirektør',
     expertise: 'IT-brandmand',
     email: 'jan@esecsec.dk',
-    phone: '?'
+    phone: '?',
+    photoUrl: '/team_images/stock.jpg' // Add this line
   },
   {
     name: 'Morten Felding',
     title: 'Sælger',
     expertise: 'Salg',
     email: 'morten@esecsec.dk',
-    phone: '?'
+    phone: '?',
+    photoUrl: '/team_images/morten.jpg' // Add this line
   }
 ];
 
@@ -59,7 +63,7 @@ const About = () => {
           <h1 className="text-4xl font-bold mb-4">Mød Vores Team</h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Vi er et dedikeret team af sikkerhedseksperter med omfattende erfaring 
-            inden for cybersikkerhed og IT-sikkerhedsløsninger.
+            inden for IT-sikkerhedsløsninger og AI.
           </p>
         </div>
 
@@ -71,7 +75,8 @@ const About = () => {
               className="bg-white rounded-xl shadow-sm overflow-hidden hover:shadow-md transition-shadow"
             >
               <div className="aspect-w-1 aspect-h-1 bg-gray-100 flex items-center justify-center">
-                <HiUser className="w-20 h-20 text-gray-400" />
+              {/* <HiUser className="w-150 h-150 text-gray-400" /> */}
+                <img src={member.photoUrl} className="w-150 h-150" />
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-semibold mb-1">{member.name}</h3>

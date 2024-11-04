@@ -26,33 +26,33 @@ const Header = ({ toggleSidebar }) => {
           </Link>
         </div>
 
-        {/* Desktop Navigation */}
+        {/* Desktop Navigation 
         <nav className="hidden md:flex items-center gap-6">
-          <Link 
-            to="/" 
+          <Link
+            to="/"
             className="text-gray-600 hover:text-primary transition-colors"
           >
             Hjem
           </Link>
-          <Link 
-            to="/about" 
+          <Link
+            to="/about"
             className="text-gray-600 hover:text-primary transition-colors"
           >
             Om os
           </Link>
-          <Link 
-            to="/products" 
+          <Link
+            to="/products"
             className="text-gray-600 hover:text-primary transition-colors"
           >
             Produkter
           </Link>
-          <Link 
-            to="/contact" 
+          <Link
+            to="/contact"
             className="btn btn-primary"
           >
             Kontakt os
           </Link>
-        </nav>
+        </nav>*/}
       </div>
     </header>
   );
