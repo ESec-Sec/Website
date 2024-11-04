@@ -14,7 +14,7 @@ const teamMembers = [
     title: 'IT-security Specialist',
     expertise: 'Sikkerhedsanalyse, Compliance, IT-sikkerhed',
     email: 'jakob@esecsec.dk',
-    phone: '?',
+    phone: 'N/A',
     photoUrl: '/team_images/jakob.jpg' // Add this line
   },
   {
@@ -22,7 +22,7 @@ const teamMembers = [
     title: 'Branddirektør',
     expertise: 'IT-brandmand',
     email: 'jan@esecsec.dk',
-    phone: '?',
+    phone: 'N/A',
     photoUrl: '/team_images/stock.jpg' // Add this line
   },
   {
@@ -30,7 +30,7 @@ const teamMembers = [
     title: 'Sælger',
     expertise: 'Salg',
     email: 'morten@esecsec.dk',
-    phone: '?',
+    phone: 'N/A',
     photoUrl: '/team_images/morten.jpg' // Add this line
   }
 ];
