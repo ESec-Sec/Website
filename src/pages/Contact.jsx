@@ -7,7 +7,7 @@ const teamMembers = [
     name: 'David Hald',
     title: 'AI Specialist',
     expertise: 'AI',
-    email: 'david@esecsec.dk',
+    email: 'david@davidhald.com',
     phone: '+45 40 91 42 53'
   },
   {
@@ -49,7 +49,7 @@ const Contact = () => {
 
     try {
       const templateParams = {
-        to_email: 'example@example.com',
+        to_email: 'david@davidhald.com',
         from_name: formData.name,
         from_email: formData.email,
         from_phone: formData.phone,
@@ -91,7 +91,7 @@ const Contact = () => {
       <section className="text-center mb-12">
         <h1 className="text-4xl font-bold mb-4">Kontakt Os</h1>
         <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-          Vi er her for at hjælpe. Kontakt os med dine spørgsmål om AI og IT-sikkerhedsløsninger.
+          Vi er her for at hjælpe. Kontakt os med dine spørgsmål om AI og IT-sikkerhed.
         </p>
       </section>
 
@@ -219,7 +219,7 @@ const Contact = () => {
                 <div>
                   <h3 className="font-medium">Email</h3>
                   <a href="mailto:info@esecsec.dk" className="text-gray-600 hover:text-primary">
-                    info@esecsec.dk
+                    david@davidhald.com
                   </a>
                 </div>
               </div>
