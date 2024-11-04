@@ -1,4 +1,4 @@
-import { HiMail, HiPhone, HiUser } from 'react-icons/hi';
+import { HiMail, HiPhone, HiUser } from 'react-icons/hi'; //import stuff
 
 const teamMembers = [
   {
