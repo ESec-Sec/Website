@@ -20,7 +20,7 @@ const Header = ({ toggleSidebar }) => {
               alt="Esecsec Logo" 
               className="h-8 w-auto"
             />
-            <span className="text-xl font-semibold text-gray-900">
+            <span className="text-xl font-italic text-gray-900">
               Esecsec
             </span>
           </Link>

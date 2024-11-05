@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M16 2L4 8V15C4 21.6274 9.07255 27.6274 16 29C22.9274 27.6274 28 21.6274 28 15V8L16 2Z" stroke="#ff6f00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M16 8V20M16 8L10 14M16 8L22 14M16 20L10 14M16 20L22 14" stroke="#ff6f00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+<!--Neural Network Nodes-->
+
+    <circle cx="140" cy="60" r="15" fill="#ff6f00"/>
+    <circle cx="60" cy="140" r="15" fill="#ff6f00"/>
+    <circle cx="140" cy="140" r="15" fill="#ff6f00"/>
+    <circle cx="100" cy="100" r="25" fill="#ff6f00"/>
+  <!--Connecting Lines-->
+
 </svg>
