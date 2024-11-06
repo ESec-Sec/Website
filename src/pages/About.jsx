@@ -27,8 +27,8 @@ const teamMembers = [
   },
   {
     name: 'Morten Felding',
-    title: 'Sælger',
-    expertise: 'Salg',
+    title: 'Salg',
+    expertise: 'CEO',
     email: 'morten@esecsec.dk',
     phone: 'N/A',
     photoUrl: '/team_images/morten.jpg'
