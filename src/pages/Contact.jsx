@@ -5,7 +5,7 @@ import emailjs from '@emailjs/browser';
 const teamMembers = [
   {
     name: 'David Hald',
-    title: 'AI Specialist',
+    title: 'AI and IT-security Specialist',
     expertise: 'AI',
     email: 'david@davidhald.com',
     phone: '+45 40 91 42 53'
